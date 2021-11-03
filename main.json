@@ -1,0 +1,1472 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AdventurersGuidetoValenaire",
+        "abbreviation": "AGV",
+        "full": "Adventurer's Guide to Valenaire",
+        "authors": [
+          "Louis Solana"
+        ],
+        "convertedBy": [
+          "Louis Solana"
+        ],
+        "version": "1.0",
+        "url": "https://quentora.com/agv/main.json",
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "dateAdded": 1635796522,
+    "dateLastModified": 1635796522
+  },
+  "class": [
+    {
+      "name": "Caller",
+      "source": "AGV",
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "int",
+        "dex"
+      ],
+      "classTableGroups": [
+				{
+					"colLabels": [
+            "{@filter Cantrips Known|spells|level=0|class=caller}",
+						"{@filter Spells Known|spells|class=caller}"
+					],
+					"rows": [
+						[
+              3,
+							1
+						],
+						[
+              3,
+							2
+						],
+						[
+              3,
+							3
+						],
+						[
+              3,
+							3
+						],
+						[
+              4,
+							4
+						],
+						[
+              4,
+							4
+						],
+						[
+              4,
+							5
+						],
+						[
+              4,
+							5
+						],
+						[
+              5,
+							6
+						],
+						[
+              5,
+							6
+						],
+						[
+              5,
+							7
+						],
+						[
+              5,
+							7
+						],
+						[
+              6,
+							8
+						],
+						[
+              6,
+							8
+						],
+						[
+              6,
+							9
+						],
+						[
+              6,
+							9
+						],
+						[
+              6,
+							10
+						],
+						[
+              6,
+							10
+						],
+						[
+              6,
+							11
+						],
+						[
+              6,
+							11
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=caller}",
+						"{@filter 2nd|spells|level=2|class=caller}",
+						"{@filter 3rd|spells|level=3|class=caller}",
+						"{@filter 4th|spells|level=4|class=caller}",
+						"{@filter 5th|spells|level=5|class=caller}"
+					],
+					"rows": [
+						[
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shields"
+        ],
+        "weapons": [
+          "simple",
+          "{@item longsword|phb|longswords}",
+          "{@item rapier|phb|rapiers}",
+          "{@item shortsword|phb|shortswords}"
+        ],
+        "tools": [],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "animal handling",
+                "arcana",
+                "history",
+                "religion",
+                "insight",
+                "survival",
+                "nature"
+              ],
+              "count": 3
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) one {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon} or (b) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}",
+          "(a) {@item leather armor|phb} or (b) {@item hide armor|phb}",
+          "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+          "(a) an {@item explorer's pack|phb} or (b) a {@item diplomat's pack|phb}"
+        ],
+        "goldAlternative": "4d4 x 10"
+      },
+      "classFeatures": [
+        "Spellcasting|Caller|AGV|1",
+        "Call Eidolon|Caller|AGV|1",
+        {
+          "classFeature": "Mystic Bond|Caller|AGV|1",
+          "gainSubclassFeature": true
+        },
+        "Gossamer Affinity|Caller|AGV|3",
+        "Ability Score Improvement|Caller|AGV|4",
+        "Additional Form|Caller|AGV|4",
+        "Dreaming Tether|Caller|AGV|5",
+        {
+          "classFeature": "Mystic Bond feature|Caller|AGV|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Caller|AGV|8",
+        "Additional Form|Caller|AGV|8",
+        {
+          "classFeature": "Mystic Bond feature|Caller|AGV|10",
+          "gainSubclassFeature": true
+        },
+        "Expanded Affinity|Caller|AGV|11",
+        "Ability Score Improvement|Caller|AGV|12",
+        "Additional Form|Caller|AGV|12",
+        {
+          "classFeature": "Mystic Bond feature|Caller|AGV|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Caller|AGV|16",
+        "Additional Form|Caller|AGV|16",
+        "Exalted Affinity|Caller|AGV|18",
+        "Ability Score Improvement|Caller|AGV|19",
+        "Additional Form|Caller|AGV|19",
+        "Highcaller|Caller|AGV|20"
+      ],
+      "subclassTitle": "Mystic Bond",
+      "fluff": [
+        {
+          "source": "AGV",
+          "entries": [
+            "As the soul sheds its mortal memories while migrating along the Deadpath towards their next reincarnation, these memories collect in wells of concentrated magic. And when a mortal dreams, a part of their subconscious drifts into the Gossamer, coloring the surrounding environment with the shadows of their dreams. The interaction between the Deadpath and the Gossamer is what allows eidolons to manifest.",
+            "In societies where callers are prominent, individuals are given various hallucinagenic and sedatory plants to induce a coma, then guided through a shared dream into the Gossamer in order to encounter these eidolons in their native habitat. The conversation between caller and eidolon is a game of chess that the practitioner has been prepared for in advance; once the two reach a suitable accord, the Bond is formed.",
+            "Callers form a Bond between their soul and the Ideal of an eidolon - its true form, so to speak. The tether formed between the dreaming mind of a caller and the waking mind of the eidolon allows the caller to pour a portion of the Eidolon's consciousness into a physical body called a Form. The size, number, and power of the Form summoned can change depending on the Bond forged during their initial encounter in the Gossamer.",
+            "Furthermore, these is a sense of being _connected_ with the eidolon while the caller is awake. The caller is the window by which the eidolon can view the physical world: and the adventures that a caller embarks on are an addictive interest to an eternal yet ephemeral creature like an Eidolon. When the caller sleeps, the eidolon and caller share in their dreams and half-rememberances of past adventures. A caller and eidolon are connected even beyond their mortal lives, as they find their lifelong friend waiting to guide them in the Deadpath towards their next life."
+          ],
+          "name": "A Bond of Dreams",
+          "type": "section"
+        },
+        {
+          "source": "AGV",
+          "entries": [
+            "Eidolons are at their core a massive storehouse of ancient knowledge. This repository of knowledge gives an eidolon its personality: some may be cautious and bookish, where others may be aggressive and tempestuous. Many Eidolons will make commentary on people, places, or events the caller encounters. They will offer their council on certain decisions; though their advice is colored by the various emotions and memories that make up the Eidolon's Ideal. And they will divulge their secrets if requested.",
+            "Callers have the ability to pull information, training, techniques, and even spells from the Ideal of their Eidolon. These abilities, called Affinities, give Callers an edge when they run up against an obstacle they have never encountered before. Where others are forced to confront their lack of understanding, a Caller can draw from their Eidolon and bring light to the unknown."
+          ],
+          "name": "Knowledge Beyond Time",
+          "type": "section"
+        }
+      ],
+      "classSpells": [
+        {
+          "name": "Absorb Elements",
+          "source": "XGE"
+        },
+        "Acid Splash",
+        "Aid",
+        "Alarm",
+        "Alter Self",
+        "Arcane Eye",
+        "Arcane Lock",
+        "Armor of Agathys",
+        "Arms of Hadar",
+        {
+          "name": "Ashardalon's Stride",
+          "source": "FTD"
+        },
+        "Animal Messenger",
+        "Banishment",
+        "Barkskin",
+        "Bigby's Hand",
+        "Blade Ward",
+        "Blight",
+        "Blink",
+        "Blur",
+        {
+          "name": "Booming Blade",
+          "source": "TCE"
+        },
+        {
+          "name": "Catapult",
+          "source": "XGE"
+        },
+        {
+          "name": "Catnap",
+          "source": "XGE"
+        },
+        {
+          "name": "Cause Fear",
+          "source": "XGE"
+        },
+        {
+          "name": "Charm Monster",
+          "source": "XGE"
+        },
+        "Chill Touch",
+        "Cloud of Daggers",
+        "Comprehend Languages",
+        "Contact Other Plane",
+        "Continual Flame",
+        "Counterspell",
+        {
+          "name": "Create Bonfire",
+          "source": "XGE"
+        },
+        "Create Food and Water",
+        "Creation",
+        "Crown of Madness",
+        "Cure Wounds",
+        "Dancing Lights",
+        "Darkness",
+        "Darkvision",
+        "Detect Magic",
+        "Dimension Door",
+        "Dispel Magic",
+        "Dominate Beast",
+        "Dream",
+        {
+          "name": "Earthbind",
+          "source": "XGE"
+        },
+        "Eldritch Blast",
+        {
+          "name": "Elemental Bane",
+          "source": "XGE"
+        },
+        "Elemental Weapon",
+        {
+          "name": "Enervation",
+          "source": "XGE"
+        },
+        "Enhance Ability",
+        "Enlarge/Reduce",
+        "Enthrall",
+        "Expeditious Retreat",
+        "Fabricate",
+        "Faerie Fire",
+        "False Life",
+        {
+          "name": "Far Step",
+          "source": "XGE"
+        },
+        "Feather Fall",
+        "Fire Bolt",
+        "Fire Shield",
+        "Fly",
+        "Freedom of Movement",
+        "Gaseous Form",
+        "Glyph of Warding",
+        "Grease",
+        "Greater Restoration",
+        {
+          "name": "Green-Flame Blade",
+          "source": "TCE"
+        },
+        "Guidance",
+        "Guiding Bolt",
+        "Hallucinatory Terrain",
+        "Haste",
+        "Healing Word",
+        "Heat Metal",
+        "Heroism",
+        "Hold Monster",
+        "Hold Person",
+        "Hypnotic Pattern",
+        "Identify",
+        "Inflict Wounds",
+        "Insect Plague",
+        "Invisibility",
+        "Jump",
+        "Leomund's Secret Chest",
+        "Lesser Restoration",
+        "Levitate",
+        "Light",
+        "Longstrider",
+        "Mage Hand",
+        "Magic Circle",
+        "Magic Mouth",
+        {
+          "name": "Maximilian's Earthen Grasp",
+          "source": "XGE"
+        },
+        "Mending",
+        "Message",
+        "Minor Illusion",
+        "Misty Step",
+        "Moonbeam",
+        "Mordenkainen's Private Sanctum",
+        "Negative Energy Flood",
+        "Otiluke's Resilient Sphere",
+        "Passwall",
+        "Planar Binding",
+        "Plant Growth",
+        "Poison Spray",
+        "Polymorph",
+        "Prestidigitation",
+        "Protection from Energy",
+        "Protection from Evil and Good",
+        "Protection from Poison",
+        "Purify Food and Drink",
+        "Pyrotechnics",
+        {
+          "name": "Raulothim's Psychic Lance",
+          "source": "FTD"
+        },
+        "Ray of Enfeeblement",
+        "Ray of Frost",
+        "Remove Curse",
+        "Resistance",
+        "Revivify",
+        "Rope Trick",
+        "Sanctuary",
+        "Scrying",
+        "See Invisibility",
+        {
+          "name": "Shadow Blade",
+          "source": "XGE"
+        },
+        "Sending",
+        "Shatter",
+        "Shocking Grasp",
+        {
+          "name": "Sickening Radiance",
+          "source": "XGE"
+        },
+        {
+          "name": "Skill Empowerment",
+          "source": "XGE"
+        },
+        {
+          "name": "Skywrite",
+          "source": "XGE"
+        },
+        {
+          "name": "Snare",
+          "source": "XGE"
+        },
+        "Spare the Dying",
+        "Spider Climb",
+        {
+          "name": "Spirit Shroud",
+          "source": "TCE"
+        },
+        "Stone Shape",
+        "Stoneskin",
+        "Suggestion",
+        {
+          "name": "Summon Abberation",
+          "source": "XGE"
+        },
+        {
+          "name": "Summon Fey",
+          "source": "XGE"
+        },
+        {
+          "name": "Sword Burst",
+          "source": "TCE"
+        },
+        {
+          "name": "Synaptic Static",
+          "source": "XGE"
+        },
+        {
+          "name": "Tasha's Caustic Brew",
+          "source": "TCE"
+        },
+        "Teleportation Circle",
+        "Tenser's Floating Disk",
+        "Thaumaturgy",
+        "Thorn Whip",
+        {
+          "name": "Thunder Step",
+          "source": "XGE"
+        },
+        {
+          "name": "Thunderclap",
+          "source": "XGE"
+        },
+        {
+          "name": "Toll the Dead",
+          "source": "XGE"
+        },
+        "Tongues",
+        {
+          "name": "Transmute Rock",
+          "source": "XGE"
+        },
+        "True Strike",
+        "Unseen Servant",
+        "Vampiric Touch",
+        {
+          "name": "Wall of Light",
+          "source": "XGE"
+        },
+        "Wall of Stone",
+        "Warding Bond",
+        {
+          "name": "Warding Wind",
+          "source": "XGE"
+        },
+        "Water Breathing",
+        "Water Walk",
+        "Web",
+        "Witch Bolt"
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Spellcasting",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 1,
+      "entries": [
+        "You have learned to draw magic into the waking world by connecting your soul to an eternal creature of the Gossamer. See {@book chapter 10|PHB|10} for the general rules of spellcasting.",
+        {
+          "type": "entries",
+          "name": "Preparing and Casting Spells",
+          "entries": [
+            "The Caller table shows how many spell slots you have to cast your {@filter caller spells|spells|class=caller}. To cast one of your caller spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of caller spells that are available for you to cast, choosing from the caller spell list. When you do so, choose a number of caller spells equal to your Intelligence modifier + half your caller level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 5th-level caller, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of caller spells requires time spent a semi-conscious state called Trance: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "entries": [
+            "Intelligence is your spellcasting ability for your caller spells, since their power originates from the mental bond you have with your eidolon. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a caller spell you or your eidolon cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "entries": [
+            "You can cast a caller spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "entries": [
+            "You can use an {@item arcane focus|PHB} as a spellcasting focus for your caller spells."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Call Eidolon",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 1,
+      "entries": [
+        "At 1st level You can use your action to magically draw your eidolon into a physical body that you fashion for it. Choose two forms from the Eidolon Forms table; your selections are the only forms your eidolon can inhabit. As you increase in level, you will gain access to additional forms for your eidolon to take.",
+        "It is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the eidolon form stat block, which uses your proficiency bonus (PB) in several places. You determine the creature's appearance; your choice has no effect on its game statistics.",
+        "In combat, the eidolon form shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take an action or bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action, depending on your subclass. If you are incapacitated, the eidolon form can take any action of its choice, not just Dodge.",
+        "This feature can be used a number of times equal to half your Caller level (rounded up), and you regain all expended uses when you finish a long rest.",
+        {
+          "type": "table",
+          "caption": "Eidolon Forms",
+          "colLabels": [
+            "Name",
+            "Nature"
+          ],
+          "colStyles": [
+            "col-6 text-center",
+            "col-6 text-center"
+          ],
+          "rows": [
+            [
+              "{@creature lightwell eidolon|agv}",
+              "Radiant/Piercing"
+            ],
+            [
+              "{@creature coremind eidolon|agv}",
+              "Psychic/Bludgeoning"
+            ],
+            [
+              "{@creature stormfury eidolon|agv}",
+              "Lightning/Piercing"
+            ],
+            [
+              "{@creature gloomwraith eidolon|agv}",
+              "Necrotic/Piercing"
+            ],
+            [
+              "{@creature paleward eidolon|agv}",
+              "Force/Bludgeoning"
+            ],
+            [
+              "{@creature venomscythe eidolon|agv}",
+              "Poison/Slashing"
+            ],
+            [
+              "{@creature flameguard eidolon|agv}",
+              "Fire/Slashing"
+            ],
+            [
+              "{@creature skybreaker eidolon|agv}",
+              "Thunder/Bludgeoning"
+            ],
+            [
+              "{@creature rimeblade eidolon|agv}",
+              "Cold/Piercing"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mystic Bond",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 1,
+      "entries": [
+        "At 1st level you define the nature of your Eidolon's Bond with you. You can choose either the Bond of Fellowship, Equilibrium, or Synergy. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+      ]
+    },
+    {
+      "name": "Gossamer Affinity",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 3,
+      "entries": [
+        "At 3rd level, your connection with your Eidolon has yielded additional benefits in the form of esoteric skills and knowledge. You gain two Gossamer Affinities from the {@filter Optional Features|optionalfeatures|Feature Type=OTH|Level=caller} page. When you gain a level in this class, you can choose one of the affinities that you know and replace it with another one from the Gossamer Affinities list."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a feat."
+      ]
+    },
+    {
+      "name": "Additional Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, the number of forms that your eidolon can take increases. Choose an additional form from the Eidolon Forms table and add it to your list of available forms."
+      ]
+    },
+    {
+      "name": "Dreaming Tether",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 5,
+      "entries": [
+        "Once you reach 5th level, the tether between you and your eidolon strengthens allowing your physical essence to strengthen the bond. As an action, you may expend a number of your hit dice up to your proficiency bonus to heal a wounded eidolon's Form. Once you use this feature, you cannot use it again until you complete a short rest."
+      ]
+    },
+    {
+      "name": "Mystic Bond feature",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature granted by your caller Bond."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a feat."
+      ]
+    },
+    {
+      "name": "Additional Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level, the number of forms that your eidolon can take increases. Choose an additional form from the Eidolon Forms table and add it to your list of available forms."
+      ]
+    },
+    {
+      "name": "Mystic Bond feature",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature granted by your caller Bond."
+      ]
+    },
+    {
+      "name": "Expanded Affinity",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 11,
+      "entries": [
+        "At 11th level, your Affinity for the nebulous knowledge of the Gossamer affords you further boons. Choose an additional Affinity from the list of Gossamer Affinities."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a feat."
+      ]
+    },
+    {
+      "name": "Additional Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level, the number of forms that your eidolon can take increases. Choose an additional form from the Eidolon Forms table and add it to your list of available forms."
+      ]
+    },
+    {
+      "name": "Mystic Bond feature",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your caller Bond."
+      ]
+    },
+    {
+      "name": "Mystic Bond feature",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your caller Bond."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 16,
+      "entries": [
+        "When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a feat."
+      ]
+    },
+    {
+      "name": "Additional Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 16,
+      "entries": [
+        "When you reach 16th level, the number of forms that your eidolon can take increases. Choose an additional form from the Eidolon Forms table and add it to your list of available forms."
+      ]
+    },
+    {
+      "name": "Exalted Affinity",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 18,
+      "entries": [
+        "At 18th level, your Affinity for the nebulous knowledge of the Gossamer affords you further boons. Choose a final Affinity from the list of Gossamer Affinities."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a feat."
+      ]
+    },
+    {
+      "name": "Additional Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level, the number of forms that your eidolon can take increases. Choose an additional form from the Eidolon Forms table and add it to your list of available forms."
+      ]
+    },
+    {
+      "name": "Highcaller",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "level": 20,
+      "entries": [
+        "At 20th level, you can ignore the verbal and somatic components of your caller spells, as well as any material components that lack a cost and aren't consumed by a spell."
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Superior Form",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Equilibrium",
+      "subclassSource": "AGV",
+      "level": 1,
+      "entries": [
+        "At 1st level, your Eidolon is stronger than most. When you roll the form's hit dice to determine its HP, its Hit Dice maximum is increased by your proficiency bonus, and it gains a bonus to its armor class equal to half your proficiency bonus rounded up. The form now lasts for 1 hour and is considered a Large creature."
+      ]
+    },
+    {
+      "name": "Balanced Ferocity",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Equilibrium",
+      "subclassSource": "AGV",
+      "level": 6,
+      "entries": [
+        "At 6th level, your Eidolon can make an additional attack while taking the attack action."
+      ]
+    },
+    {
+      "name": "Dreamer's Symmetry",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Equilibrium",
+      "subclassSource": "AGV",
+      "level": 10,
+      "entries": [
+        "At 10th level, you learn new ways to channel the Gossamer. When either you hit a target with a magic weapon attack or your eidolon form hits a target, you can channel magical energy through the strike to create one of the following effects:",
+        {
+          "type": "list",
+          "items": [
+            "The target takes an extra 1d6 damage of your eidolon's damage type.",
+            "Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring a number of hit points equal to 1d6 + your Intelligence modifier."
+          ]
+        },
+        "You can use this feature a number of times equal to your Intelligence modifier (minimum of one), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+      ]
+    },
+    {
+      "name": "Mystic Harmony",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Equilibrium",
+      "subclassSource": "AGV",
+      "level": 14,
+      "entries": [
+        "At 14th level, your Dreamer's Symmetry and eidolon's form become more powerful.",
+        {
+          "type": "list",
+          "items": [
+            "The extra damage and the healing of your Dreamer's Symmetry both increase to 2d6.",
+            "Your eidolon form gains a +2 bonus to its Armor Class.",
+            "Whenever an attack made on your eidolon does not hit, your eidolon may use their reaction to deal damage equal to 1d6 + your Intelligence modifier of your eidolon's damage type."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gossamer Facet",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Fellowship",
+      "subclassSource": "AGV",
+      "level": 1,
+      "entries": [
+        "At 1st level you gain the ability to distill your eidolon into two smaller forms; sacrificing concentrated power for a more diversified approach. When summoning an eidolon, you normally summon their forms with a size of Small. You may choose to summon a Medium form instead of two Small forms, or a Large form instead of three Small forms."
+      ]
+    },
+    {
+      "name": "Expanded Fellowship",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Fellowship",
+      "subclassSource": "AGV",
+      "level": 6,
+      "entries": [
+        "At 6th level your ability to distill your eidolon's power into forms becomes more varied and mutable. You are now able to summon three Small forms of your eidolon at a time."
+      ]
+    },
+    {
+      "name": "Mystic Reverie",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Fellowship",
+      "subclassSource": "AGV",
+      "level": 10,
+      "entries": [
+        "At 10th level, you and your eidolons gain advantage on attack rolls if at least one of you are adjacent to the target. Your eidolons have advantage on saving throws against being charmed, and magic can't put them to sleep."
+      ]
+    },
+    {
+      "name": "Fused Lattice",
+      "source": "AGV",
+      "className": "Caller",
+      "classSource": "AGV",
+      "subclassShortName": "Fellowship",
+      "subclassSource": "AGV",
+      "level": 14,
+      "entries": [
+        "At 14th level, beneficial spells that you target on one of your active forms have their effects shared amongst all your active forms. You are now able to summon four Small forms of your eidolon at a time."
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Bond of Equilibrium",
+      "subclassFeatures": [
+        "Superior Form|Caller|AGV|Equilibrium|AGV|1",
+        "Balanced Ferocity|Caller|AGV|Equilibrium|AGV|6",
+        "Dreamer's Symmetry|Caller|AGV|Equilibrium|AGV|10",
+        "Mystic Harmony|Caller|AGV|Equilibrium|AGV|14"
+      ],
+      "source": "AGV",
+      "shortName": "Equilibrium",
+      "className": "Caller",
+      "classSource": "AGV"
+    },
+    {
+      "name": "Bond of Fellowship",
+      "subclassFeatures": [
+        "Gossamer Facet|Caller|AGV|Fellowship|AGV|1",
+        "Expanded Fellowship|Caller|AGV|Fellowship|AGV|6",
+        "Mystic Reverie|Caller|AGV|Fellowship|AGV|10",
+        "Fused Lattice|Caller|AGV|Fellowship|AGV|14"
+      ],
+      "source": "AGV",
+      "shortName": "Fellowship",
+      "className": "Caller",
+      "classSource": "AGV"
+    },
+    {
+      "name": "Bond of Synergy",
+      "subclassFeatures": [
+        "Gossamer Facet|Caller|AGV|Fellowship|AGV|1",
+        "Expanded Fellowship|Caller|AGV|Fellowship|AGV|6",
+        "Mystic Reverie|Caller|AGV|Fellowship|AGV|10",
+        "Fused Lattice|Caller|AGV|Fellowship|AGV|14"
+      ],
+      "source": "AGV",
+      "shortName": "Synergy",
+      "className": "Caller",
+      "classSource": "AGV"
+    }
+  ],
+  "optionalfeature": [
+    {
+			"name": "Vital Transference",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Caller"
+						}
+					}
+				}
+			],
+			"entries": [
+				"If you are within 30 feet of your eidolon and either of you take damage, you may use your reaction to split the damage between you and your eidolon. This does not transfer any additional affects that may accompany the damage."
+			],
+			"source": "AGV",
+			"featureType": "OTH"
+		},
+    {
+			"name": "Arcane Feedback",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Caller"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your eidolon's Counterspell causes a cruel feedback of magical force against the caster. When your eidolon successfully counters a spell with Counterspell, the caster of the countered spell takes {@dice 1d6} damage of your eidolon's damage type per level of the spell countered."
+			],
+			"source": "AGV",
+			"featureType": "OTH"
+		},
+    {
+			"name": "Transpose Location",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Caller"
+						}
+					}
+				}
+			],
+			"entries": [
+				"If you are within 30 feet of your eidolon, you can use your action to swap positions between you and your eidolon."
+			],
+			"source": "AGV",
+			"featureType": "OTH"
+    }
+  ],
+  "monster": [
+    {
+      "name": "Lightwell Eidolon",
+      "source": "AdventurersGuidetoValenaire",
+      "summonedByClass": "Caller|PHB",
+      "size": "S",
+      "type": "aberration",
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "special": "10 + PB (natural armor)"
+        }
+      ],
+      "hp": {
+        "special": "2 + your Intelligence modifier + two times your caller level (the beast has a number of Hit Dice [d6s] equal to your caller level)"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 14,
+      "wis": 8,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 9,
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Light Affinity",
+          "entries": [
+            "The eidolon may cast any spell or cantrip currently prepared by its caller that deals either Radiant or Piercing damage."
+          ]
+        },
+        {
+          "name": "Radiant Bond",
+          "entries": [
+            "The eidolon may expend a number of hit dice up to half your PB, dealing necrotic damage to itself which can't be reduced in any way. One creature of your choice that the eidolon can see within 15 ft. regains a number of hit points equal to the damage taken."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Piercing Light",
+          "entries": [
+            "{@atk rw} {@hitYourSpellAttack} to hit, range 15/30 ft., one target. {@h}{@damage 1d6 + 2 + PB} piercing damage. On a critical strike, the attack does an additional {@damage 1d6} radiant damage."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "P",
+        "R"
+      ],
+      "skill": {
+        "medicine": "+4"
+      },
+      "miscTags": [
+        "RW"
+      ],
+      "save": {
+        "dex": "+2",
+        "int": "+2"
+      }
+    },
+    {
+      "name": "Coremind Eidolon",
+      "source": "AdventurersGuidetoValenaire",
+      "summonedByClass": "Caller|PHB",
+      "size": "S",
+      "type": "aberration",
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armor)"
+        }
+      ],
+      "hp": {
+        "special": "2 + your Intelligence modifier + two times your caller level (the beast has a number of Hit Dice [d6s] equal to your caller level)"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 6,
+      "con": 14,
+      "int": 10,
+      "wis": 14,
+      "cha": 8,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 9,
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Coremind Affinity",
+          "entries": [
+            "The eidolon may cast any spell or cantrip currently prepared by its caller that deals either Psychic or Bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Enthralling Guard",
+          "entries": [
+            "As an action, the eidolon transforms into a beguiling form. It gains an additional +2 to its Armor Class, and its speed becomes zero.  Any creature the eidolon can see within 30 feet of it must succeed on a Wisdom saving throw (your spell DC) or be {@condition charmed} until the spell ends, or until you or your companions do anything harmful to it. While {@condition charmed} in this way, a creature can do nothing but use its movement to approach the eidolon in a safe manner. While an affected creature is within 5 feet of the eidolon it cannot move, and may use either its action or bonus action on its turn.",
+            "At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Animus",
+          "entries": [
+            "{@atk mw} {@hitYourSpellAttack} to hit, range 5 ft., one target. {@h}{@damage 1d8 + 2 + PB} bludgeoning damage. On a critical strike, the attack does an additional {@damage 1d6} radiant damage."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "B",
+        "R"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "skill": {
+        "insight": "+4"
+      },
+      "save": {
+        "str": "+2",
+        "wis": "+2"
+      }
+    },
+    {
+      "name": "Stormfury Eidolon",
+      "source": "AdventurersGuidetoValenaire",
+      "summonedByClass": "Caller|PHB",
+      "size": "S",
+      "type": "aberration",
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "special": "10 + PB (natural armor)"
+        }
+      ],
+      "hp": {
+        "special": "2 + your Intelligence modifier + two times your caller level (the beast has a number of Hit Dice [d6s] equal to your caller level)"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 14,
+      "int": 12,
+      "wis": 10,
+      "cha": 8,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 9,
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Ironstorm Affinity",
+          "entries": [
+            "The eidolon may cast any spell or cantrip currently prepared by its caller that deals either Lightning or Piercing damage."
+          ]
+        },
+        {
+          "name": "Steel Burst",
+          "entries": [
+            "As an action, the eidolon shatters its transient form in a torrent of steel and storm. All creatures within a 15 foot radius must make a Dexterity saving throw (your spell save DC) or take {@damage 3d8} piercing damage, half on a save."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Static Barrage",
+          "entries": [
+            "The eidolon fires three electrified steel bolts at a creature in range. {@atk mw} Three attacks, {@hitYourSpellAttack} to hit, range 60 ft. {@h}{@damage 1d6 + 2 + PB} lightning damage."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "L",
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "save": {
+        "dex": "+2",
+        "con": "+2"
+      },
+      "skill": {
+        "acrobatics": "+4"
+      }
+    },
+    {
+      "name": "Gloomwraith Eidolon",
+      "source": "AdventurersGuidetoValenaire",
+      "summonedByClass": "Caller|PHB",
+      "size": "S",
+      "type": "aberration",
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "special": "10 + PB (natural armor)"
+        }
+      ],
+      "hp": {
+        "special": "2 + your Intelligence modifier + two times your caller level (the beast has a number of Hit Dice [d6s] equal to your caller level)"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 8,
+      "con": 14,
+      "int": 10,
+      "wis": 12,
+      "cha": 8,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 9,
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Nightspear Affinity",
+          "entries": [
+            "The eidolon may cast any spell or cantrip currently prepared by its caller that deals either Necrotic or Piercing damage."
+          ]
+        },
+        {
+          "name": "Blacksiphon",
+          "entries": [
+            "As an action, the eidolon can deal an additional {@damage 1d6 + 2 + PB} necrotic damage to a target currently {@condition grappled} by the creature's Barbed Echoes."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Barbed Echoes",
+          "entries": [
+            "{@atk mw} Two attacks, {@hitYourSpellAttack} to hit, range 60 ft. {@h}{@damage 1d6 + 2 + PB} piercing damage. Creature must make a Strength saving throw (your spell save DC) or be {@condition grappled}. If the creature is in dim light it makes the save with disadvantage. The Gloomwraith may have up to two creatures {@condition grappled} at a time."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "P",
+        "N"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "save": {
+        "con": "+2",
+        "wis": "+1"
+      },
+      "skill": {
+        "perception": "+4"
+      },
+      "conditionInflict": [
+        "grappled"
+      ]
+    }
+  ]
+}
